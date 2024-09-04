@@ -1,0 +1,47 @@
+\makeatletter
+\input{packages_and_configuration.cls}
+\makeatother
+
+\begin{document} %{{{
+\input{title}
+
+\newpage
+\tableofcontents
+\newpage
+
+% TODO TODO TODO
+
+\section{Abkürzungsverzeichnis}
+\input{abbrev}
+
+\section{Einleitung}
+\subfile{einleitung.tex}
+
+\section{Hauptteil}
+\subfile{hauptteil.tex}
+
+\section{Schlussteil}
+\subfile{schlussteil.tex}
+
+\section{Quellenverzeichnis}
+\printbibliography[heading=none]
+%\subfile{references}
+
+\RemoveFromHook{cmd/section/before}{\clearpage}
+\section{Abbildungs- \& Tabellenverzeichnis}
+\listoffigures
+\listoftables
+
+\clearpage
+\section{Anhang}
+\subfile{anhang.tex}
+
+\clearpage
+\section*{Selbstständigkeitserklärung}
+\subfile{selbst.tex}
+
+% END: Anhang }}}
+
+\end{document} %}}}
+
+

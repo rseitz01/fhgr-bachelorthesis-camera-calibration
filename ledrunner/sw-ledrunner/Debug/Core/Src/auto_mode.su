@@ -1,0 +1,3 @@
+../Core/Src/auto_mode.c:11:6:auto_mode_activate	16	static
+../Core/Src/auto_mode.c:21:6:auto_mode_deactivate	16	static
+../Core/Src/auto_mode.c:28:6:auto_mode_process	56	static

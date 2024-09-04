@@ -1,0 +1,2 @@
+../Core/Src/str.c:16:10:str_len	24	static
+../Core/Src/str.c:23:9:str_at	24	static

@@ -1,0 +1,12 @@
+../Core/Src/tlc.c:27:5:tlc_init	24	static
+../Core/Src/tlc.c:45:6:tlc_pause	16	static
+../Core/Src/tlc.c:62:6:tlc_run	16	static
+../Core/Src/tlc.c:74:5:tlc_set_arr	16	static
+../Core/Src/tlc.c:86:5:tlc_set_psc	16	static
+../Core/Src/tlc.c:97:5:tlc_recalculate_fps	24	static
+../Core/Src/tlc.c:109:5:tlc_set_fps	32	static
+../Core/Src/tlc.c:124:6:tlc_apply_arr_psc	24	static
+../Core/Src/tlc.c:133:6:tlc_mode_exit	16	static
+../Core/Src/tlc.c:162:6:tlc_apply_changes	16	static
+../Core/Src/tlc.c:177:6:tlc_mode_enter	16	static
+../Core/Src/tlc.c:227:13:tlc_mode	24	static

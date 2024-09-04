@@ -1,4 +1,4 @@
-# fhgr-thesis-camera-calibration
+# fhgr-bachelorthesis-camera-calibration
 
 ## Ordnerstruktur
 

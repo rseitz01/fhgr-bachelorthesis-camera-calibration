@@ -1,0 +1,2 @@
+../Core/Src/timer_estimator.c:13:7:timer_estimate_freq_toggle	32	static
+../Core/Src/timer_estimator.c:20:10:timer_estimate	80	static

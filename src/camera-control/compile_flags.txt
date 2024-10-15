@@ -1,0 +1,7 @@
+-I
+/usr/include/
+-I
+/usr/include/opencv4/
+-D
+PLATFORM_LINUX
+

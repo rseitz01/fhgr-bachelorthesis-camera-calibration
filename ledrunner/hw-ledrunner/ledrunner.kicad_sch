@@ -1,0 +1,71 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 2ad58629-4c11-48df-89ac-567f5e5a6b39)
+
+  (paper "A4")
+
+  (title_block
+    (title "ledrunner")
+    (date "2024-08-08")
+    (rev "3")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 158.75 82.55) (size 12.7 22.86) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0b5ee168-2d33-422c-989f-c7d54b2956d7)
+    (property "Sheetname" "leds" (at 158.75 81.8384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "leds.kicad_sch" (at 158.75 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ledrunner"
+        (path "/2ad58629-4c11-48df-89ac-567f5e5a6b39" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 132.08 96.52) (size 22.86 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid e870e2d4-ed83-4cc3-87f9-429fe33648a8)
+    (property "Sheetname" "uc" (at 132.08 95.8084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "uc.kicad_sch" (at 132.08 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ledrunner"
+        (path "/2ad58629-4c11-48df-89ac-567f5e5a6b39" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 132.08 82.55) (size 22.86 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid ff90982c-18c5-4c68-b343-c5e023ecdbf9)
+    (property "Sheetname" "power" (at 132.08 81.8384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 132.08 92.0246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "ledrunner"
+        (path "/2ad58629-4c11-48df-89ac-567f5e5a6b39" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

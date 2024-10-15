@@ -1,0 +1,14 @@
+../Drivers/CMSIS/Include/core_cm4.h:1939:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+../Core/Src/cli.c:15:5:cli_init	24	static
+../Core/Src/cli.c:30:5:cli_feed	32	static
+../Core/Src/cli.c:85:5:cli_parse	32	static
+../Core/Src/cli.c:120:5:cli_parse_help	16	static
+../Core/Src/cli.c:130:5:cli_info	288	static
+../Core/Src/cli.c:192:5:cli_process	16	static
+../Core/Src/cli.c:215:5:cli_parse_info	200	static
+../Core/Src/cli.c:247:5:cli_config	368	static
+../Core/Src/cli.c:347:5:cli_parse_config	336	static
+../Core/Src/cli.c:413:6:cli_mode	568	static
+../Core/Src/cli.c:508:5:cli_parse_mode	272	static
+../Core/Src/cli.c:550:6:cli_raw_send	24	static
+../Core/Src/cli.c:556:6:cli_ready	8	static

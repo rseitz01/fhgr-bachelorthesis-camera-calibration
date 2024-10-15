@@ -1,0 +1,61 @@
+
+\title{Entwicklung eines automatischen Timing-Messgeräts für Kameras
+\\\large
+\hfill \break
+Pho21 Bachelorthesis der Fachhochschule Graubünden \\in Zusammenarbeit mit Astrivis Technologies Ltd
+}
+
+\author{}
+
+
+\maketitle
+
+\vspace{-0.5cm}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=20em]{../images/phone/gerät-edit.jpg}
+\end{figure}
+
+\vspace{0.5cm}
+
+\begin{longtable}[l]{ @{} >{\RaggedRight\hspace{0pt}} p{.25\linewidth}p{.7\linewidth} @{} }
+    Autor:
+    & Raphael Seitz
+    \\& E-Mail: r.seitz2001@gmail.com
+    \\ 
+    \\ Referent:
+    & Prof. Dr. Philipp Roebrock, FH Graubünden,
+    \\& Institut für Photonics und Robotics
+
+    \\ Korreferent:
+    & Olivier Saurer, Astrivis Technologies Ltd
+
+    \\ Studiengang:
+    & BSc Photonics, Institut für Photonics und Robotics, FH Graubünden
+
+    \\ Start der Thesis: & 19.02.2024
+    \\ Abgabe der Thesis: & 09.08.2024
+    % ENDE
+    \addtocounter{table}{-1}\setcounter{enumi}{0}
+\end{longtable}
+
+\thispagestyle{empty} % remove page number
+
+\clearpage
+\begin{abstract}
+    Viele Computervision-Anwendungen sind auf ein korrektes Timing der aufgenommenen Bilder angewiesen.
+    Es wurde ein Timing-Messgerät entwickelt, mit welchem die Bildwiederholrate und Belichtung über die Zeit detektiert werden können.
+    Dies geschieht über das Analysieren der Änderung vom Wandern lassen einer LED in einer 4x4 Anordnung.
+    Das Gerät lässt sich über ein USB-Kabel mit einem Computer verbinden und über die serielle Schnittstelle konfigurieren.
+    Während dem Messvideo muss die Frequenz des Messgerätes leicht von der Kamera abweichen und die Position und die Lichtverhältnisse so unveränderlich wie möglich bleiben.
+    Die Auswertung geschieht im Nachhinein durch eine Software geschrieben in Python.
+    Darin wird automatisch die Position des Gerätes gefunden und die Helligkeiten der LEDs kalibriert, um robuste Resultate zu erhalten.
+
+    Dies funktioniert erst für ein Messystem bestehend aus je einer Kamera mit Global Shutter und einem Messgerät.
+    Eine Kommunikation zwischen Messgeräten ist gegeben aber noch nicht implementiert.
+    Die Auswertung kann und darf derzeit nur ein Messgerät detektieren.
+    Im Fall, wenn zwei Kameras dasselbe Messgerät zur gleichen Zeit filmen, geschieht während der Auswertung kein Austausch der Messwerte zwischen den einzelnen Videos.
+
+\end{abstract}
+

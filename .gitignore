@@ -1,0 +1,14 @@
+aruco/aruco-generation
+camera-control-pc/video
+*.o
+*.d
+*/obj
+*.mp4
+*.swp
+*.pyc
+*.vim
+camera-control-pc/a
+camera-control-pc/a
+FHGR-Bachelorarbeit-Seitz-Raphael
+FHGR-Bachelorarbeit-Seitz-Raphael.zip
+

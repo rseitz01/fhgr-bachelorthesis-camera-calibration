@@ -1,0 +1,77 @@
+% INHALT: {{{
+% In den Schlussteil der Arbeit gehören eine Zusammenfassung der wichtigsten Ergebnisse,
+% die Interpretation der Resultate und der Vergleich mit eventuell bereits vorhandenen Resultaten.
+% Hinzu kommt eine kritische Beurteilung der eigenen Arbeit (Fragestellung und methodisches Vorgehen im Vergleich mit den erreichten Ergebnissen),
+% offene Fragen und ein Ausblick (Hinweise auf weiterführende Themenstellungen).
+% }}}
+
+\subsection{Zusammefassung der Ergebnisse}
+
+\begin{longtable}[l]{ @{} >{\RaggedRight\hspace{0pt}} lp{.96\linewidth} @{} }
+    \textbullet & Die Kodierung der Zeit geschieht über Änderungen in der Position der LEDs (\secref{sec:Zentrum-def-laufenden-Leuchtdiode}).
+    \\\textbullet & Die Kodierung der Belichtungszeit ist ablesbar aus der Anzahl an aktiven LEDs (\secref{sec:Breite-der-laufenden-Leuchtdiode}).
+    \addtocounter{table}{-1}\setcounter{enumi}{0}
+\end{longtable}
+
+\subsection{Interpretation der Resultate}
+
+Die in \appref{app:results} gezeigten Resultate haben diverse Einflüsse:
+\begin{longtable}[l]{ @{} >{\RaggedRight\hspace{0pt}} lp{.96\linewidth} @{} }
+    \textbullet & Eine Änderung der Belichtungszeit über die Messdauer spielt vermutlich zusammen mit sich ändernen Lichtverhältnissen, denn dies ist sehr anfällig darüber.
+    \\\textbullet & Die FPS bleiben in der Regel sehr gleichmässig, bei Ausreissern gingen entweder Bilder verloren (weniger FPS),
+    die Frequenzen waren nicht gut abgestimmt (weniger oder mehr FPS), 
+    die Kamera verlor sehr viele Bilder (mehr FPS)
+    oder die Kamera wiederholte gewisse Bilder (mehr FPS).
+    Ein Fall, welcher nicht detektiert werden kann, ist wenn ein Vielfaches von \eqref{eq:Delta-f} Bildern verloren gehen.
+    \\\textbullet & Wenn die Frequenzen zwischen Messgerät und Kamera gut eingestellt sind, weicht die ermittelte FPS
+    in der Regel weniger als 0.3\% von der vorgegebenen ab. Die grösste Abweichung ist sichtbar in den Resultaten \hyperlinkXY{hyp:k-aos-285}.
+    \\\textbullet & Die Kalibration verbessert in der Regel die Belichtungszeit zu den Winkeln, was die Effektivität dessen darstellt.
+    Je regelmässiger dies ist, desto Wahrheitsgetreuer sind alle Resultate bei einer stabilen Kamera.
+    \addtocounter{table}{-1}\setcounter{enumi}{0}
+\end{longtable}
+
+\subsection{Kritische Beurteilung}
+
+Verschiedene Punkte, welche mit dem aktuellen Messgerät und der aktuellen Auswertungssoftware nicht funktionieren, sind folgende:
+
+\begin{longtable}[l]{ @{} >{\RaggedRight\hspace{0pt}} lp{.96\linewidth} @{} }
+% - kein Rolling shutter möglich
+    \textbullet & Bei Videos mit Rolling Shutter liefert die Auswertesoftware, wenn überhaupt das Orientierungsmuster erkannt wird, falsche Resultate.
+% - keine 100% belichtungszeit möglich
+    \\\textbullet & Bei 100\% Belichtungszeit von Bildern kann keine Position im \hyperlinkXY{hyp:mode-rider} Modus entdeckt werden.
+    Dies kann zum Beispiel bei einer Hochgeschwindigkeitskamera der Fall sein.
+% - falls 1/FPS (bzw die Hälfte davon) Bilder verloren gehen -> "kein" fehler...
+    \\\textbullet & Es ist wichtig, dass die Frequenz des Messgerätes korrekt eingestellt ist (\secref{sec:Gut-Eingestellt}).
+% - CAN-Bus noch nicht
+    \\\textbullet & Kommunikation zwischen Messgeräten ist (noch) nicht implementiert.
+% - Speichern der Einstellungen bei shutdown im gerät?
+    \\\textbullet & Vorgenommene Konfigurationen gehen beim Reset oder Hochfahren verloren.
+% - keine variable FPS / belichtungszeiten -> anfällig gegen sich ändernde Belichtungszeiten beim Aufnehmen
+    \\\textbullet & Um die Korrektheit der Auswertung zu erhöhen ist es sehr wichtig, dass sich die Lichtverhältnisse über die Zeit nicht ändern.
+    % ENDE
+    \addtocounter{table}{-1}\setcounter{enumi}{0}
+\end{longtable}
+
+\subsection{Offene Fragen}
+
+Eine Auswertung eines Mehrkamerasystems oder Präsenz von mehrfachen Messgeräte je Video konnte aus Zeitgründen nicht näher betrachtet werden.
+
+Ansätze um LEDs im Raum zu tracken \cite{6044360} konnten aus Zeitgründen nicht angeschaut werden.
+%denn das zu entwickelnde Gerät und die zu untersuchende Kamera bleiben statisch im Raum.
+
+\subsection{Ausblick}
+
+Es wurde erwähnt, dass die Auswertung nicht für Kameras mit Rolling Shutter funktioniert.
+Würde die Orientierung des Messgerätes zur Kamera respektiert und die Auswertungssoftware darauf abgestimmt und erweitert werden,
+könnte so eventuell trotzdem eine Auswertung vonstatten gehen.
+
+Würden zwei oder mehr Kameras ein Messgerät zur gleichen Zeit filmen, könnte mit einer erweiterten Auswertungssoftware
+die Stabilität der Kameras oder der Auswertungssoftware näher beurteilt werden.
+
+Bei zwei oder mehr im Bild aufgenommenen Messgeräten,
+deren Frequenzen leicht versetzt eingestellt sind, könnte
+$s_\text{maxskip}$ \eqref{eq:s_maxskip} erhöht werden.
+
+Um die Auswertungssoftware auf Korrektheit zu Überprüfen, könnten anstelle von aufgenommenen, kontrolliert Computer-Generierte Videos erstellt 
+und ausgewertet werden.
+

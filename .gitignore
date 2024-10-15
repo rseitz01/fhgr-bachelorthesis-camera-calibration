@@ -11,4 +11,13 @@ camera-control-pc/a
 camera-control-pc/a
 FHGR-Bachelorarbeit-Seitz-Raphael
 FHGR-Bachelorarbeit-Seitz-Raphael.zip
-
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.xml
+*.toc
